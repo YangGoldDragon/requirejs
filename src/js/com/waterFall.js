@@ -28,6 +28,7 @@ define(['jquery'], function ($) {
                 });
             },
             renderDate: function () {
+                console.log('开始渲染')
                 var _this = this;
                 this.getData(function (newsList) {
                     _this.isGetDate = true;        //数据一来，状态锁变为true
@@ -45,7 +46,7 @@ define(['jquery'], function ($) {
             getData: function (jsoncallback) {
                 var _this = this;
                 $.ajax({
-                    url: 'http://platform.sina.com.cn/slide/album_tech',
+                    url: 'https://platform.sina.com.cn/slide/album_tech',
                     dataType: 'jsonp',
                     jsonp: 'jsoncallback',
                     data: {
@@ -97,10 +98,9 @@ define(['jquery'], function ($) {
 
     })();
 
-    load.start($('.load-container'));
-
     return load;
 });
+
 
 
 
