@@ -2,7 +2,7 @@
 
 ## 预览地址： https://yanggolddragon.github.io/requirejs/src/
 
-## 技术栈： html5+ css3 + flex布局 + 模块化(requirejs) + jQuery
+## 技术栈： html5+ css3 +  + jQuery + 模块化(requirejs)
 
 ## 项目说明：
 1. 全屏轮播的原理是利用（left：-width * num），width的宽度是整个屏幕的宽度。有自动定时切换图片，点击切换图片，暂停切换图片等功能。
